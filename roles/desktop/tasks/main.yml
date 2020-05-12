@@ -10,6 +10,7 @@
   become: yes
   package:
     name:
+      - build-essential
       - firefox
     state: latest
 
