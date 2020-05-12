@@ -1,0 +1,5 @@
+---
+dependencies:
+  - role: brianhartsock.prezto
+    vars:
+       prezto_repo: "https://github.com/7h3kk1d/prezto"
