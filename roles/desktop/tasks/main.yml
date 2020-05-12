@@ -20,3 +20,8 @@
     name: intellij-idea-community
     classic: yes
     channel: edge
+
+- name: Install Riot
+  become: yes
+  snap:
+    name: riot-web
