@@ -4,3 +4,4 @@
   roles:
     - { role: dotfiles }
     - { role: zsh }
+    - { role: desktop }

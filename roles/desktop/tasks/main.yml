@@ -1,0 +1,21 @@
+- name: Apt update and upgrade
+  become: yes
+  apt:
+    update_cache: yes
+    upgrade: yes
+    cache_valid_time: 3600
+  when: ansible_distribution == 'Ubuntu'
+    
+- name: Install commonly used applications
+  become: yes
+  package:
+    name:
+      - firefox
+    state: latest
+
+- name: Install Intellij
+  become: yes
+  snap:
+    name: intellij-idea-community
+    classic: yes
+    channel: edge
