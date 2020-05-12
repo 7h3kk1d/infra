@@ -3,6 +3,7 @@ SHELL := /bin/bash
 # Heavily inspired by https://github.com/ps1337/Dotfile-tools/blob/master/Makefile
 #
 deploy: ## Run all roles
+	ansible-galaxy install -r requirements.yml
 	ansible-playbook --ask-become-pass -i "localhost," -c local local.yml
 
 ansible: ## Install ansible
